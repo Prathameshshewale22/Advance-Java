@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculator(op){
+        num1=parseInt(document.getElementById("num1").value);
+        num2=parseInt(document.getElementById("num2").value);
+        var arr=document.getElementsByName("btn");
+        for(var i=0; i<arr.length;i++){
+            if(arr[i].checked){
+                var op=arr[i].value;
+            }
+        }
+        var print=document.getElementById("mydiv");
+        switch(op){
+            case "+":
+              print.innerHTML="Addition is= "+(num1+num2);
+              break;
+            case "-":
+            print.innerHTML="substraction is= "+(num1-num2);
+              break;
+            case "*":
+            print.innerHTML="multiplication is= "+(num1*num2);
+              break;
+            case "/":
+            print.innerHTML="Division is= "+(num1/num2);
+              break;
+
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="num1" id="num1" placeholder="enter 1st number">
+    <input type="text" name="num2" id="num2" placeholder="enter 2nd number"><br>
+    <br>
+
+    <input type="radio" name="btn" id="btn1" value="+"><label for="btn1">Addition</label>
+    <input type="radio" name="btn" id="btn2" value="-"><label for="btn2">substraction</label>
+    <input type="radio" name="btn" id="btn3" value="*"><label for="btn3">multiplication</label>
+    <input type="radio" name="btn" id="btn4" value="/"><label for="btn4">division</label><br>
+    <br>
+    <button type="button" name="btnip" id="btnip" onclick="calculator()">calculate</button>
+    <div id="mydiv">
+
+    </div>
+</body>
+</html>
