@@ -1,0 +1,21 @@
+package Tester;
+import static utils.HibernateUtils;
+
+import org.hibernate.SessionFactory;
+
+
+public class TestEmployeeHibenate {
+
+	public static void main(String[] args) {
+		
+		try( getFactory()){
+			
+		}catch(RuntimeException e) {
+			
+		}finally {
+			
+		}
+
+	}
+
+}

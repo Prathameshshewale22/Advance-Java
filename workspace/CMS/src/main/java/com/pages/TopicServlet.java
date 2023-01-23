@@ -32,7 +32,7 @@ public class TopicServlet extends HttpServlet {
 			
 			User us=(User)sh.getAttribute("userinfo");
 			if(us !=null) {
-				pw.write("<h5>User details from httpsession"+us +"</h5>");
+//				pw.write("<h5>User details from httpsession"+us +"</h5>");
 				
 				Topicdao tp=(Topicdao)sh.getAttribute("Topic_dao");
 				List<Topic> alltopics=tp.getalltopics();

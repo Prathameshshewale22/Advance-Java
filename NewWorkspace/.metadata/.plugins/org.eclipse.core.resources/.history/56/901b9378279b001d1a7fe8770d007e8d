@@ -1,0 +1,9 @@
+package Dao;
+
+import pojos.Employee;
+
+public Interface IEmployeeDao {
+	
+	String SaveUserDetails(Employee emp);
+
+}

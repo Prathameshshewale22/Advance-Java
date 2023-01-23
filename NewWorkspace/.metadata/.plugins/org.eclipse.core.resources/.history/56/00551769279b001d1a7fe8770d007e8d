@@ -1,0 +1,7 @@
+package Dao;
+
+public class IEmployeeDao {
+	
+	String SaveUserDetails(Employee emp)
+
+}

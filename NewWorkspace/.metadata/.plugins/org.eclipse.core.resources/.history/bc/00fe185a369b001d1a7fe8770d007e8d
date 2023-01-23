@@ -1,0 +1,15 @@
+package Dao;
+
+import pojos.Employee;
+import static utils.HibernateUtils.getFactory;
+
+public class EmployeeDao implements IEmployeeDao {
+
+	public String SaveUserDetails(Employee emp) {
+		Session session=getFactory();
+		return null;
+	}
+	
+	
+
+}
